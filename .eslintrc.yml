@@ -1,0 +1,31 @@
+root: true
+env:
+  browser: true
+  es2022: true
+  node: true
+ignorePatterns:
+  - lib
+  - '*.js'
+  - '*.mjs'
+  - '*.cjs'
+parser: '@typescript-eslint/parser'
+parserOptions:
+  project: './tsconfig.json'
+plugins:
+  - tailwindcss
+extends:
+  - prettier
+  - airbnb
+  - airbnb-typescript
+  - plugin:react/jsx-runtime
+rules:
+  no-tabs: off
+  no-empty-pattern: off
+  import/prefer-default-export: off
+  react/jsx-indent: off
+  react/jsx-one-expression-per-line: off
+  tailwindcss/no-custom-classname:
+    - warn
+    - whitelist: []
+
+  '@typescript-eslint/indent': off

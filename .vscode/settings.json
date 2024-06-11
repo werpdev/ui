@@ -1,0 +1,12 @@
+{
+	"biome.enabled": false,
+	"prettier.enable": true,
+	"[javascript][javascriptreact][typescript][typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "always",
+			"source.fixAll": "always",
+			"source.organizeImports": "always"
+		}
+	}
+}

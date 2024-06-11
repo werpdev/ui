@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"include": ["src/**/*.ts", "src/**/*.tsx"],
+	"exclude": ["**/*.stories.tsx"],
+	"compilerOptions": {
+		"outDir": "lib/types",
+		"declaration": true,
+		"emitDeclarationOnly": true
+	}
+}

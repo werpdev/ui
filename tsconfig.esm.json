@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"include": ["src/**/*.ts", "src/**/*.tsx"],
+	"exclude": ["**/*.stories.tsx"],
+	"compilerOptions": {
+		"module": "ES2022",
+		"outDir": "lib/esm",
+		"declaration": false
+	}
+}
