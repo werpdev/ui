@@ -4,6 +4,7 @@
 	"exclude": ["**/*.stories.tsx"],
 	"compilerOptions": {
 		"module": "CommonJS",
+		"baseUrl": "./src",
 		"outDir": "lib/cjs",
 		"declaration": false,
 		"verbatimModuleSyntax": false

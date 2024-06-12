@@ -4,6 +4,7 @@
 	"exclude": ["**/*.stories.tsx"],
 	"compilerOptions": {
 		"module": "ES2022",
+		"baseUrl": "./src",
 		"outDir": "lib/esm",
 		"declaration": false
 	}

@@ -3,6 +3,7 @@
 	"include": ["src/**/*.ts", "src/**/*.tsx"],
 	"exclude": ["**/*.stories.tsx"],
 	"compilerOptions": {
+		"baseUrl": "./src",
 		"outDir": "lib/types",
 		"declaration": true,
 		"emitDeclarationOnly": true
