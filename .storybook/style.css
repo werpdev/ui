@@ -2,10 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	:root {
+		--gray-f7: 247 247 247;
+		--gray-ee: 238 238 238;
+		--gray-aa: 176 176 176;
+	}
+	html[data-mode='dark'] {
+		--gray-f7: 9 9 9;
+		--gray-ee: 18 18 18;
+		--gray-aa: 79 79 79;
+	}
+}
+
+:root {
+	font-size: 62.5%;
+	font-weight: medium;
+}
+
 html {
 	font-family: 'Montserrat', sans-serif;
 }
 
 html[data-mode='dark'] {
 	color-scheme: dark;
+}
+
+body {
+	font-size: 1.6rem;
 }
