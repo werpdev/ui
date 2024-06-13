@@ -27,7 +27,7 @@ const config: Config = {
 		fontSize: remMap(to30, to50),
 		lineHeight: remMap(to30, to50),
 		spacing: remMap(to30, to50, to100),
-		borderRadius: { ...remMap(to30), full: '100%' },
+		borderRadius: { ...remMap(to30, to50), full: '100%' },
 		colors: {
 			foreground: 'rgba(var(--c-foreground) / <alpha-value>)',
 			background: 'rgba(var(--c-background) / <alpha-value>)',

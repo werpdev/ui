@@ -22,13 +22,13 @@ export function Button({ ref, type, fill, disabled, children, Icon, onClick, cla
 			disabled={disabled}
 			onClick={onClick}
 			className={clsx(
-				'relative z-0 flex h-44 items-center overflow-hidden rounded-10 border-2 px-12 duration-150 disabled:pointer-events-none',
+				'relative z-0 flex h-44 items-center overflow-hidden rounded-10 border-2 px-12 duration-100 disabled:pointer-events-none',
 				Icon != null && 'gap-x-8',
 				isIconOnly && 'w-44 justify-center px-0',
 				{
-					primary: 'bg-primary text-black border-transparent hover:border-gray-cc disabled:opacity-70',
-					blue: 'bg-blue text-white border-transparent hover:border-gray-cc disabled:opacity-70',
-					background: 'bg-background text-foreground border-transparent hover:border-gray-cc disabled:opacity-70',
+					primary: 'bg-primary text-black border-transparent hover:opacity-70 disabled:opacity-70',
+					blue: 'bg-blue text-white border-transparent hover:opacity-70 disabled:opacity-70',
+					background: 'bg-background text-foreground border-transparent hover:opacity-70 disabled:opacity-70',
 					outline: 'border-gray-cc bg-gray-f3 hover:bg-gray-cc text-background disabled:text-gray-cc',
 				}[fill],
 				className,
