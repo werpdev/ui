@@ -47,3 +47,13 @@ export const TextIcon: Story = {
 		Icon: IconSettings,
 	},
 };
+
+export const TextIconRight: Story = {
+	...Default,
+	args: {
+		...Default.args,
+		children: 'Button',
+		Icon: IconSettings,
+		iconAlign: 'right',
+	},
+};

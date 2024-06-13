@@ -5,6 +5,7 @@ type Props = {
 	ref?: React.Ref<HTMLButtonElement>;
 	type: 'button' | 'submit' | 'reset';
 	fill: 'primary' | 'blue' | 'background' | 'outline';
+	iconAlign?: 'left' | 'right';
 	disabled?: boolean;
 	Icon?: Icon;
 	children?: React.ReactNode;
@@ -12,7 +13,7 @@ type Props = {
 	className?: string;
 };
 
-export function Button({ ref, type, fill, disabled, children, Icon, onClick, className }: Props): React.ReactNode {
+export function Button({ ref, type, fill, iconAlign = 'left', disabled, children, Icon, onClick, className }: Props): React.ReactNode {
 	const isIconOnly = Icon != null && children == null;
 	return (
 		<button
@@ -25,6 +26,7 @@ export function Button({ ref, type, fill, disabled, children, Icon, onClick, cla
 				'relative z-0 flex h-44 items-center overflow-hidden rounded-10 border-2 px-12 duration-100 disabled:pointer-events-none',
 				Icon != null && 'gap-x-8',
 				isIconOnly && 'w-44 justify-center px-0',
+				iconAlign === 'right' && 'flex-row-reverse',
 				{
 					primary: 'bg-primary text-black border-transparent hover:opacity-70 disabled:opacity-70',
 					blue: 'bg-blue text-white border-transparent hover:opacity-70 disabled:opacity-70',
