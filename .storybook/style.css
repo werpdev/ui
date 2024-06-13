@@ -28,11 +28,11 @@
 	html[data-mode='dark'] {
 		--c-foreground: 0 0 0;
 		--c-background: 255 255 255;
-		--c-gray-f7: 9 9 9;
-		--c-gray-f3: 13 13 13;
-		--c-gray-ee: 18 18 18;
-		--c-gray-cc: 51 51 51;
-		--c-gray-aa: 79 79 79;
-		--c-gray-55: 170 170 170;
+		--c-gray-f7: 46 46 46;
+		--c-gray-f3: 50 50 50;
+		--c-gray-ee: 46 46 46;
+		--c-gray-cc: 75 75 75;
+		--c-gray-aa: 100 100 100;
+		--c-gray-55: 200 200 200;
 	}
 }
