@@ -22,16 +22,21 @@ const config: Config = {
 	darkMode: ['class', '[data-mode="dark"]'],
 	theme: {
 		fontSize: remMap(to50),
+		lineHeight: remMap(to50),
 		spacing: remMap(to100),
 		borderRadius: { ...remMap(to30), full: '100%' },
 		colors: {
 			gray: {
-				f7: 'rgba(var(--gray-f7) / <alpha-value>)',
-				ee: 'rgba(var(--gray-ee) / <alpha-value>)',
-				aa: 'rgba(var(--gray-aa) / <alpha-value>)',
+				f7: 'rgba(var(--c-gray-f7) / <alpha-value>)',
+				ee: 'rgba(var(--c-gray-ee) / <alpha-value>)',
+				aa: 'rgba(var(--c-gray-aa) / <alpha-value>)',
+				55: 'rgba(var(--c-gray-55) / <alpha-value>)',
 			},
+			wine: 'rgba(var(--c-wine) / <alpha-value>)',
 		},
-		extend: {},
+		content: {
+			empty: '""',
+		},
 	},
 	plugins: [],
 };

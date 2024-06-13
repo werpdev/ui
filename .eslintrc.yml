@@ -18,17 +18,23 @@ extends:
   - airbnb
   - airbnb-typescript
   - plugin:react/jsx-runtime
+  - plugin:tailwindcss/recommended
 rules:
   no-tabs: off
   no-empty-pattern: off
   arrow-body-style: off
   no-restricted-syntax: off
+  object-curly-newline: off
   import/prefer-default-export: off
   react/jsx-indent: off
   react/jsx-one-expression-per-line: off
   react/jsx-props-no-spreading: off
+  react/require-default-props: off
+  react/jsx-indent-props: off
+  tailwindcss/classnames-order: error
+  tailwindcss/enforces-negative-arbitrary-values: error
   tailwindcss/no-custom-classname:
-    - warn
+    - error
     - whitelist: []
 
   '@typescript-eslint/indent': off
