@@ -8,6 +8,8 @@ jobs:
     permissions:
       contents: read
       packages: write
+    env:
+      GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -17,11 +19,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20.x
-          registry-url: https://registry.npmjs.org
+          registry-url: https://npm.pkg.github.com
           cache: pnpm
       - run: pnpm install
       - run: npm run check
       - run: npm run build
       - run: npm publish --access public
-        env:
-          GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
