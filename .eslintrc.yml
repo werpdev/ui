@@ -18,14 +18,26 @@ extends:
   - airbnb
   - airbnb-typescript
   - plugin:react/jsx-runtime
+  - plugin:tailwindcss/recommended
 rules:
+  max-len: off
   no-tabs: off
   no-empty-pattern: off
+  arrow-body-style: off
+  no-restricted-syntax: off
+  object-curly-newline: off
   import/prefer-default-export: off
   react/jsx-indent: off
   react/jsx-one-expression-per-line: off
-  tailwindcss/no-custom-classname:
-    - warn
-    - whitelist: []
-
+  react/jsx-props-no-spreading: off
+  react/require-default-props: off
+  react/jsx-indent-props: off
   '@typescript-eslint/indent': off
+  '@typescript-eslint/no-unused-vars':
+    - error
+    - argsIgnorePattern: '^_'
+  tailwindcss/classnames-order: error
+  tailwindcss/enforces-negative-arbitrary-values: error
+  tailwindcss/no-custom-classname:
+    - error
+    - whitelist: []

@@ -2,10 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-	font-family: 'Montserrat', sans-serif;
-}
+@layer base {
+	:root {
+		font-size: 62.5%;
+		font-weight: medium;
+		font-family: 'Montserrat', sans-serif;
+	}
+	html[data-mode='dark'] {
+		color-scheme: dark;
+	}
+	body {
+		font-size: 1.6rem;
+	}
 
-html[data-mode='dark'] {
-	color-scheme: dark;
+	:root {
+		--c-foreground: 255 255 255;
+		--c-background: 0 0 0;
+		--c-gray-f7: 247 247 247;
+		--c-gray-f3: 243 243 243;
+		--c-gray-ee: 238 238 238;
+		--c-gray-cc: 204 204 204;
+		--c-gray-aa: 176 176 176;
+		--c-gray-55: 85 85 85;
+	}
+	html[data-mode='dark'] {
+		--c-foreground: 0 0 0;
+		--c-background: 255 255 255;
+		--c-gray-f7: 46 46 46;
+		--c-gray-f3: 50 50 50;
+		--c-gray-ee: 46 46 46;
+		--c-gray-cc: 75 75 75;
+		--c-gray-aa: 100 100 100;
+		--c-gray-55: 200 200 200;
+	}
 }
