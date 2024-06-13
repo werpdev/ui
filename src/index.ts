@@ -1,1 +1,1 @@
-export * from './field/Input';
+export * from './form/Input';

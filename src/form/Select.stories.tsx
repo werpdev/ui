@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Select } from './Select';
 
 export default {
-	title: 'Select',
+	title: 'form/Select',
 	component: Select,
 } satisfies Meta<typeof Select>;
 

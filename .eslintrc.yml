@@ -20,6 +20,7 @@ extends:
   - plugin:react/jsx-runtime
   - plugin:tailwindcss/recommended
 rules:
+  max-len: off
   no-tabs: off
   no-empty-pattern: off
   arrow-body-style: off
@@ -32,6 +33,9 @@ rules:
   react/require-default-props: off
   react/jsx-indent-props: off
   '@typescript-eslint/indent': off
+  '@typescript-eslint/no-unused-vars':
+    - error
+    - argsIgnorePattern: '^_'
   tailwindcss/classnames-order: error
   tailwindcss/enforces-negative-arbitrary-values: error
   tailwindcss/no-custom-classname:

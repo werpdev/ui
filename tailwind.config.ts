@@ -26,13 +26,22 @@ const config: Config = {
 		spacing: remMap(to100),
 		borderRadius: { ...remMap(to30), full: '100%' },
 		colors: {
+			foreground: 'rgba(var(--c-foreground) / <alpha-value>)',
+			background: 'rgba(var(--c-background) / <alpha-value>)',
 			gray: {
 				f7: 'rgba(var(--c-gray-f7) / <alpha-value>)',
+				f3: 'rgba(var(--c-gray-f3) / <alpha-value>)',
 				ee: 'rgba(var(--c-gray-ee) / <alpha-value>)',
+				cc: 'rgba(var(--c-gray-cc) / <alpha-value>)',
 				aa: 'rgba(var(--c-gray-aa) / <alpha-value>)',
 				55: 'rgba(var(--c-gray-55) / <alpha-value>)',
 			},
-			wine: 'rgba(var(--c-wine) / <alpha-value>)',
+			transparent: 'transparent',
+			primary: '#dff000',
+			white: '#ffffff',
+			black: '#000000',
+			wine: '#d10060',
+			blue: '#0a84ff',
 		},
 		content: {
 			empty: '""',

@@ -16,15 +16,22 @@
 	}
 
 	:root {
+		--c-foreground: 255 255 255;
+		--c-background: 0 0 0;
 		--c-gray-f7: 247 247 247;
+		--c-gray-f3: 243 243 243;
 		--c-gray-ee: 238 238 238;
+		--c-gray-cc: 204 204 204;
 		--c-gray-aa: 176 176 176;
 		--c-gray-55: 85 85 85;
-		--c-wine: 209 0 96;
 	}
 	html[data-mode='dark'] {
+		--c-foreground: 0 0 0;
+		--c-background: 255 255 255;
 		--c-gray-f7: 9 9 9;
+		--c-gray-f3: 13 13 13;
 		--c-gray-ee: 18 18 18;
+		--c-gray-cc: 51 51 51;
 		--c-gray-aa: 79 79 79;
 		--c-gray-55: 170 170 170;
 	}

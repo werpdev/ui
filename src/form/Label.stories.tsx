@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Label } from './Label';
 
 export default {
-	title: 'Label',
+	title: 'form/Label',
 	component: Label,
 } satisfies Meta<typeof Label>;
 
