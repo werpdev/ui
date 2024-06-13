@@ -9,51 +9,41 @@ export default {
 
 type Story = StoryObj<typeof Button>;
 
-export const WithIcon: Story = {
+const Default: Story = {
 	args: {
 		type: 'button',
 		fill: 'primary',
+	},
+	argTypes: {
+		type: { control: { disable: true } },
+		children: { control: { disable: true } },
+		Icon: { control: { disable: true } },
+		fill: { control: 'select', options: ['primary', 'blue', 'background', 'outline'] },
+		disabled: { control: 'boolean' },
+	},
+};
+
+export const Text: Story = {
+	...Default,
+	args: {
+		...Default.args,
 		children: 'Button',
+	},
+};
+
+export const Icon: Story = {
+	...Default,
+	args: {
+		...Default.args,
 		Icon: IconSettings,
 	},
 };
 
-export const IconOnly: Story = {
+export const TextIcon: Story = {
+	...Default,
 	args: {
-		type: 'button',
-		fill: 'primary',
+		...Default.args,
+		children: 'Button',
 		Icon: IconSettings,
-	},
-};
-
-export const Primary: Story = {
-	args: {
-		type: 'button',
-		fill: 'primary',
-		children: 'Button',
-	},
-};
-
-export const Blue: Story = {
-	args: {
-		type: 'button',
-		fill: 'blue',
-		children: 'Button',
-	},
-};
-
-export const Background: Story = {
-	args: {
-		type: 'button',
-		fill: 'background',
-		children: 'Button',
-	},
-};
-
-export const Outline: Story = {
-	args: {
-		type: 'button',
-		fill: 'outline',
-		children: 'Button',
 	},
 };
