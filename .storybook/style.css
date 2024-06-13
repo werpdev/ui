@@ -4,6 +4,18 @@
 
 @layer base {
 	:root {
+		font-size: 62.5%;
+		font-weight: medium;
+		font-family: 'Montserrat', sans-serif;
+	}
+	html[data-mode='dark'] {
+		color-scheme: dark;
+	}
+	body {
+		font-size: 1.6rem;
+	}
+
+	:root {
 		--c-gray-f7: 247 247 247;
 		--c-gray-ee: 238 238 238;
 		--c-gray-aa: 176 176 176;
@@ -16,21 +28,4 @@
 		--c-gray-aa: 79 79 79;
 		--c-gray-55: 170 170 170;
 	}
-}
-
-:root {
-	font-size: 62.5%;
-	font-weight: medium;
-}
-
-html {
-	font-family: 'Montserrat', sans-serif;
-}
-
-html[data-mode='dark'] {
-	color-scheme: dark;
-}
-
-body {
-	font-size: 1.6rem;
 }

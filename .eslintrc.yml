@@ -31,10 +31,9 @@ rules:
   react/jsx-props-no-spreading: off
   react/require-default-props: off
   react/jsx-indent-props: off
+  '@typescript-eslint/indent': off
   tailwindcss/classnames-order: error
   tailwindcss/enforces-negative-arbitrary-values: error
   tailwindcss/no-custom-classname:
     - error
     - whitelist: []
-
-  '@typescript-eslint/indent': off
