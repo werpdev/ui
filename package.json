@@ -5,6 +5,9 @@
 		"type": "git",
 		"url": "git+https://github.com/werpdev/ui.git"
 	},
+	"publishConfig": {
+		"@werp:registry": "https://npm.pkg.github.com"
+	},
 	"author": "reizt <reizt.dev@gmail.com>",
 	"license": "MIT",
 	"main": "./lib/cjs/index.js",
